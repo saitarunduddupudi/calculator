@@ -46,7 +46,7 @@
         <form id="cal">
             <input id="display" ><br><br>
             <input type="button" value="AC" class="a" onclick="cal.display.value=''">
-            <input type="button" value="c" class="a" onclick="clear()">
+            <input type="button" value="c" class="a" onclick="display.value=display.value.toString().slice(0,-1)">
             <input type="button" value="%" class="a" onclick="cal.display.value+='%'">
             <input type="button" value="+" class="a" onclick="cal.display.value+='+'"><br><br>
             <input type="button" value="1" class="a" onclick="cal.display.value+='1'">
@@ -67,11 +67,13 @@
             
         </form>
     </center>
-    <script>
-        function clear(){
-        var b=document.getElementById('display').value;
-        document.getElementById('display').value=b.substring(0,b.length-1);
-        }
-    </script>
+    <!-- <script> -->
+        <!-- function clear(){ -->
+
+        <!-- let b=document.getElementById('display').value; -->
+        <!-- // document.getElementById('display').value=b.substring(0,b.length-1); -->
+
+        <!-- } -->
+    <!-- </script> -->
 </body>
 </html>
